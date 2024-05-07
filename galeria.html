@@ -4,44 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Armaduras Eternas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>Galería de Armaduras Eternas</h1>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="armadura1.jpg" alt="Armadura 1">
-                <p>La imponente Armadura de Faraam, portada por los temibles Caballeros <br>Fauces Rojas que juraron lealtad al Rey Vendrico.</p>
-            </div>
-            <div class="gallery-item">
-                <img src="armadura2.jpg" alt="Armadura 2">
-                <p>La emblemática Armadura de Solaire de Astora, <br>portada por el legendario Guerrero de la Luz.</p>
-            </div>
-            <div class="gallery-item">
-                <img src="armadura3.jpg" alt="Armadura 3">
-                <p>La siniestra Armadura de los Caballeros Negros, temidos servidores <br>de la Orden de Gwyn, el mítico Lord de la Ceniza.</p>
-            </div>
-            <div class="gallery-item">
-                <img src="armadura4.jpg" alt="Armadura 4">
-                <p>Armadura de Jade, forjada por los antiguos herreros de la Ciudad Abandonada, <br>sus escamas verde esmeralda brillan con la fuerza de una piedra preciosa.</p>
+        <div class="container my-5">
+            <h1 class="text-center mb-5">Galería de Armaduras Eternas</h1>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="armadura1.jpg" class="card-img-top" alt="Armadura 1">
+                        <div class="card-body">
+                            <p class="card-text">La imponente Armadura de Faraam, portada por los temibles Caballeros <br>Fauces Rojas que juraron lealtad al Rey Vendrico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="armadura2.jpg" class="card-img-top" alt="Armadura 2">
+                        <div class="card-body">
+                            <p class="card-text">La emblemática Armadura de Solaire de Astora, <br>portada por el legendario Guerrero de la Luz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="armadura3.jpg" class="card-img-top" alt="Armadura 3">
+                        <div class="card-body">
+                            <p class="card-text">La siniestra Armadura de los Caballeros Negros, temidos servidores <br>de la Orden de Gwyn, el mítico Lord de la Ceniza.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="armadura4.jpg" class="card-img-top" alt="Armadura 4">
+                        <div class="card-body">
+                            <p class="card-text">Armadura de Jade, forjada por los antiguos herreros de la Ciudad Abandonada, <br>sus escamas verde esmeralda brillan con la fuerza de una piedra preciosa.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Galería de Armaduras Eternas. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Galería de Armaduras Eternas. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-   

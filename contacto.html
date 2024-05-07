@@ -4,50 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Armaduras Dark Souls</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h1>Contacto</h1>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="tipo-solicitud">Tipo de solicitud:</label>
-            <select id="tipo-solicitud" name="tipo-solicitud" required>
-                <option value="">Selecciona una opción</option>
-                <option value="compra">Compra</option>
-                <option value="consulta">Consulta</option>
-                <option value="venta">Venta</option>
-            </select>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-
-            <button type="submit">Enviar</button>
+    <main class="container my-5">
+        <h1 class="text-center mb-5">Contacto</h1>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="tipo-solicitud" class="form-label">Tipo de solicitud:</label>
+                <select class="form-select" id="tipo-solicitud" name="tipo-solicitud" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="compra">Compra</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="venta">Venta</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
         </form>
 
-        <div class="contact-info">
-            <p>Dirección: Las Condes #11102, Santiago de Chile</p>
-            <p>Teléfono: +569 7310 0469</p>
+        <div class="contact-info mt-5">
+            <p class="mb-2"><strong>Dirección:</strong> Las Condes #11102, Santiago de Chile</p>
+            <p class="mb-0"><strong>Teléfono:</strong> +569 7310 0469</p>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Galería de Armaduras Eternas. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Galería de Armaduras Eternas. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
